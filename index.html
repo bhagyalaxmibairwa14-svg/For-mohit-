@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For Mohit ❤️</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      background: linear-gradient(to right, #ffe6f0, #fff0f5);
+      margin-top: 100px;
+    }
+    h1 {
+      color: #ff4d88;
+    }
+    p {
+      font-size: 18px;
+      color: #444;
+    }
+    button {
+      padding: 12px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      position: absolute;
+    }
+    #yes {
+      background-color: #ff4d88;
+      color: white;
+      left: 40%;
+    }
+    #no {
+      background-color: #999;
+      color: white;
+      left: 55%;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Hey Mohit 💖</h1>
+<p>I wanted to ask you something… 🥺</p>
+
+<h1>Can we make some really beautiful memories together? ✨</h1>
+
+<button id="yes" onclick="yesClicked()">Yes 💘</button>
+<button id="no">No 😢</button>
+
+<script>
+  const noBtn = document.getElementById("no");
+
+  noBtn.addEventListener("mouseover", function() {
+    const x = Math.random() * (window.innerWidth - 100);
+    const y = Math.random() * (window.innerHeight - 50);
+    noBtn.style.left = x + "px";
+    noBtn.style.top = y + "px";
+  });
+
+  function yesClicked() {
+    document.body.innerHTML = `
+      <h1 style="color:#ff4d88;">YAY Mohit ❤️</h1>
+      <p style="font-size:20px;">You just made Laxmi really happy 🥺💖</p>
+      <p>Let’s make every moment special ✨</p>
+    `;
+  }
+</script>
+
+<p style="margin-top:200px;">— From Laxmi 💌</p>
+
+</body>
+</html>
